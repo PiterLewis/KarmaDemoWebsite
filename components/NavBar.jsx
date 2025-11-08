@@ -1,16 +1,34 @@
+import { useState, useEffect } from 'react';
+import './NavBar.css';
+
 const NavBar = () => {
-    return(
-        <nav>
-            <div>
-                <img src = "./karmalogo.jpg"></img>
-            </div>
-            
-            <ul>
-                <li>Pitch</li>
-                <li>Presentacion</li>
-            </ul>
-        </nav>
-    )
-}
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+    <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
+      <div className="navbar-container">
+        <div className="navbar-logo">
+          <div className="logo-icon">
+            <span>K</span>
+          </div>
+          <span className="logo-text">KARMA</span>
+        </div>
+        
+        <ul className="navbar-menu">
+          <li className="navbar-item">Pitch</li>
+          <li className="navbar-item">Presentación</li>
+        </ul>
+      </div>
+    </nav>
+  );
+};
 
 export default NavBar;
