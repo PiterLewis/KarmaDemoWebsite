@@ -83,3 +83,29 @@
     font-size: 3rem;
   }
 }
+
+@media (max-width: 767px) {
+  .canva-section {
+    padding: 3rem 1rem;
+  }
+  
+  .section-header {
+    margin-bottom: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .section-divider {
+    width: 72px;
+  }
+  
+  .iframe-container {
+    border-radius: 12px;
+  }
+  
+  .embed-glow {
+    border-radius: 12px;
+  }
+}
