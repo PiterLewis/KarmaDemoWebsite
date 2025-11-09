@@ -3,10 +3,6 @@ import './Header.css';
 const Header = () => {
   return (
     <div className="header">
-      <div className="header-bg">
-        <div className="bg-blob bg-blob-1"></div>
-        <div className="bg-blob bg-blob-2"></div>
-      </div>
 
       <div className="header-content">
         <div className="header-logo">
