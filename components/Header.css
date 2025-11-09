@@ -12,7 +12,7 @@
   background: linear-gradient(180deg, #0a0014 0%, #1f0f3d 30%, #2d1b69 50%, #1f0f3d 70%, #0a0014 100%);
 
   /* Espaciado superior/inf para respirar y evitar solape con navbar fijo */
-  padding-top: 70vh;
+  padding-top: 60%;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
