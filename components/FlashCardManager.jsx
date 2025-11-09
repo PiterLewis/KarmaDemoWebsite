@@ -4,16 +4,16 @@ import "./FlashCardManager.css";
 const FlashCardManager = () => {
   const flashcards = [
     {
-      question: "¿Qué es Karma?",
-      answer: "Karma es una red social centrada en el bienestar, la comunidad y la energía positiva."
+      question: "¿Para qué?",
+      answer: "Empezar con el propósito, la causa, el problema, el objetivo, o la creencia fundamental del equipo. Responde a la pregunta de por qué existe el producto y por qué debería importarle a alguien. Es el motor que inspira y conecta emocionalmente con el público."
     },
     {
-      question: "¿Cómo puedo ganar puntos de Karma?",
-      answer: "Participando en actividades, compartiendo contenido útil y apoyando a otros usuarios."
+      question: "¿Cómo?",
+      answer: "Procesos, estrategias o valores que hacen única la propuesta de valor y ayudan a diferenciar el producto de la competencia."
     },
     {
-      question: "¿Qué beneficios tiene usar Karma?",
-      answer: "Conectas con personas afines, mejoras tu bienestar y contribuyes a una comunidad saludable."
+      question: "¿Qué?",
+      answer: "Es el producto o servicio tangible que la empresa vende. Es lo que la mayoría de las empresas comunican primero, pero muchas veces es lo menos importante para inspirar lealtad. Incluir beneficios de la solución, cómo mejorará la situación actual. Incluir curva de valor frente a la competencia, identificar cual es vuestra funcionalidad clave y diferencial."
     }
   ];
 
