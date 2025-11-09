@@ -6,19 +6,21 @@
   
 }
 
-/* HTML y Body */
+:root { --nav-h: 64px; }        /* ajusta si tu navbar es más alta */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-h); /* anclas/scroll inician bajo la navbar */
 }
 
 html, body {
   width: 100%;
-  height: 100%;
+  min-height: 100%;    /* evita bloquear el scroll en móviles */
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow-x: hidden;  /* no cortamos el eje Y */
   background-color: #0a0014;
 }
+
 
 /* Root */
 #root {
