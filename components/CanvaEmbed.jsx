@@ -2,6 +2,7 @@ import './CanvaEmbed.css';
 
 export default function CanvaEmbed() {
   return (
+    <div id = "linkCanva">
     <div className="canva-section">
       <div className="canva-container">
         <div className="section-header">
@@ -25,6 +26,7 @@ export default function CanvaEmbed() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

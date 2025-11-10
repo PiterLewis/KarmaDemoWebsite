@@ -5,9 +5,7 @@ const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -23,8 +21,12 @@ const NavBar = () => {
         </div>
         
         <ul className="navbar-menu">
-          <li className="navbar-item">Pitch</li>
-          <li className="navbar-item">Presentación</li>
+          <li className="navbar-item">
+            <a href="#formulario" className="navbar-link">Contact Us</a>
+          </li>
+          <li className="navbar-item">
+            <a href="#linkCanva" className="navbar-link">Presentación</a>
+          </li>
         </ul>
       </div>
     </nav>

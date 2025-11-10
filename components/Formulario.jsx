@@ -45,10 +45,12 @@ const Formulario = () => {
 
     return (
         <>
+        <div id = "formulario">
             {paso === 0 && <PersonDetail uploadData={uploadData} />}
             {paso === 1 && <InformacionContacto uploadData={uploadData} onBack={handleBack} />}
             {paso === 2 && <PreferenciasContacto uploadData={uploadData} onBack={handleBack} />}
             {paso === 3 && <ExitoHeader/>}
+        </div>
         </>
     );
 }
