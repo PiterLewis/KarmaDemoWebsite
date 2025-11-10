@@ -1,0 +1,27 @@
+.carrusell-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 20rem auto;
+  padding: 2rem 1rem;
+}
+
+.carrusell-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carrusell-container {
+    padding: 1rem 0.5rem;
+    max-width: 400px;
+    margin: 3rem auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .carrusell-container {
+    max-width: 350px;
+    margin: 2rem auto;
+  }
+}

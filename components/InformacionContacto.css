@@ -1,0 +1,196 @@
+/* Usar este CSS para PersonDetail.css, InformacionContacto.css Y PreferenciasContacto.css */
+
+.person-detail-container {
+  max-width: 550px;
+  margin: 4rem auto;
+  padding: 3rem 2.5rem;
+  background: rgba(31, 15, 61, 0.7);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  border: 2px solid rgba(236, 72, 153, 0.3);
+  box-shadow: 0 20px 60px rgba(236, 72, 153, 0.4);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+
+.person-detail-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #f472b6, #e879f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
+}
+
+.person-detail-container h2 {
+  text-align: center;
+  color: #d1d5db;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.5px;
+}
+
+.person-detail-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.form-field label {
+  color: #f472b6;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.form-field input,
+.form-field select {
+  padding: 1rem 1.3rem;
+  border: 2px solid rgba(236, 72, 153, 0.3);
+  border-radius: 14px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: rgba(10, 0, 20, 0.5);
+  color: white;
+}
+
+.form-field select option {
+  background-color: #1f0f3d;
+  color: white;
+}
+
+.form-field input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  outline: none;
+  border-color: #ec4899;
+  box-shadow: 0 0 0 4px rgba(236, 72, 153, 0.2);
+  transform: translateY(-2px);
+  background-color: rgba(31, 15, 61, 0.8);
+}
+
+.form-field input.error,
+.form-field select.error {
+  border-color: #ef4444;
+  animation: shake 0.4s ease;
+}
+
+.error-message {
+  color: #fca5a5;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: 600;
+}
+
+.error-message::before {
+  content: "⚠";
+  font-size: 1rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.submit-button {
+  flex: 1;
+  padding: 1.1rem 2rem;
+  background: linear-gradient(135deg, #ec4899, #a855f7);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(236, 72, 153, 0.4);
+}
+
+.submit-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(236, 72, 153, 0.6);
+  background: linear-gradient(135deg, #f472b6, #c026d3);
+}
+
+.submit-button:active {
+  transform: translateY(-2px);
+}
+
+.back-button {
+  flex: 1;
+  padding: 1.1rem 2rem;
+  background: rgba(31, 15, 61, 0.8);
+  color: white;
+  border: 2px solid rgba(236, 72, 153, 0.4);
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: rgba(236, 72, 153, 0.2);
+  border-color: #ec4899;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(236, 72, 153, 0.3);
+}
+
+.back-button:active {
+  transform: translateY(-2px);
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .person-detail-container {
+    margin: 2rem 1rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .person-detail-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .person-detail-container h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .button-group {
+    flex-direction: column;
+  }
+
+  .submit-button,
+  .back-button {
+    width: 100%;
+  }
+}
