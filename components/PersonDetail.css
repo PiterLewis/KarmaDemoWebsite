@@ -1,8 +1,13 @@
-/* Usar este CSS para PersonDetail.css, InformacionContacto.css Y PreferenciasContacto.css */
+/* PersonDetail.css */
+/* Usar este CSS también para InformacionContacto.css y PreferenciasContacto.css */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 .person-detail-container {
-  width: 90%;
-  max-width: 900px;
+  width: 92%;
+  max-width: 900px; /* Más ancho en escritorio */
   margin: 4rem auto;
   padding: 3rem 2.5rem;
   background: rgba(31, 15, 61, 0.7);
@@ -13,6 +18,7 @@
   font-family: system-ui, -apple-system, sans-serif;
 }
 
+/* Encabezados */
 .person-detail-container h1 {
   text-align: center;
   font-size: 2rem;
@@ -34,12 +40,14 @@
   letter-spacing: 0.5px;
 }
 
+/* Formulario */
 .person-detail-container form {
   display: flex;
   flex-direction: column;
   gap: 1.75rem;
 }
 
+/* Campos */
 .form-field {
   display: flex;
   flex-direction: column;
@@ -104,6 +112,7 @@
   font-size: 1rem;
 }
 
+/* Botones */
 .button-group {
   display: flex;
   gap: 1rem;
@@ -162,16 +171,18 @@
   transform: translateY(-2px);
 }
 
+/* Animación de error */
 @keyframes shake {
   0%, 100% { transform: translateX(0); }
   25% { transform: translateX(-10px); }
   75% { transform: translateX(10px); }
 }
 
-/* Responsive */
+/* Responsividad */
 @media (max-width: 768px) {
   .person-detail-container {
-    margin: 2rem 1rem;
+    width: 94%;
+    margin: 2rem auto;
     padding: 2rem 1.5rem;
   }
 
@@ -185,6 +196,13 @@
 }
 
 @media (max-width: 480px) {
+  .person-detail-container {
+    width: 96%;
+    margin: 1.25rem auto;
+    padding: 1.25rem;
+    border-width: 1px;
+  }
+
   .button-group {
     flex-direction: column;
   }
@@ -193,4 +211,9 @@
   .back-button {
     width: 100%;
   }
+}
+
+/* Previene scroll horizontal */
+html, body {
+  overflow-x: hidden;
 }
