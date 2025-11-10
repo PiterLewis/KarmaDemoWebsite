@@ -9,7 +9,7 @@ const FlashCardManager = () => {
     },
     {
       question: "¿Cómo?",
-      answer: "Hemos creado una app que te obliga ha hacer divertidas tareas para no quedar último y tener que realizar un reto propuesto por el resto del grupo."
+      answer: "Hemos creado una app que te obliga a hacer divertidas tareas para no quedar último y tener que realizar un reto propuesto por el resto del grupo."
     },
     {
       question: "¿Qué?",

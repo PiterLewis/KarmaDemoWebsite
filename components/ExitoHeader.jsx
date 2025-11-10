@@ -4,7 +4,7 @@ const ExitoHeader = () => {
   return (
     <div className="exito-container">
       <div className="exito-content">
-        {/* Icono de éxito animado */}
+        
         <div className="exito-icon-wrapper">
           <div className="exito-circle">
             <svg className="exito-checkmark" viewBox="0 0 52 52">
@@ -14,16 +14,16 @@ const ExitoHeader = () => {
           </div>
         </div>
 
-        {/* Título */}
+        
         <h1 className="exito-title">¡REGISTRO EXITOSO!</h1>
         
-        {/* Mensaje */}
+       
         <p className="exito-message">
           Tu información ha sido enviada correctamente. <br/>
           Nos pondremos en contacto contigo muy pronto.
         </p>
 
-        {/* Decoración */}
+        
         <div className="exito-decoration">
           <div className="exito-dot"></div>
           <div className="exito-dot"></div>
@@ -31,7 +31,7 @@ const ExitoHeader = () => {
           <div className="exito-dot exito-dot-purple"></div>
         </div>
 
-        {/* Badge */}
+       
         <div className="exito-badge">
           <span className="exito-badge-text">🎮 ¡Bienvenido a KARMA!</span>
         </div>
