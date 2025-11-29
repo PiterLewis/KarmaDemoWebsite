@@ -14,7 +14,7 @@ const ProblemSolution = () => {
         <div className="content-grid">
           {/* Problema */}
           <div className="content-card problem-card">
-            <div className="card-icon">😴</div>
+            <div className="card-icon"></div>
             <h3 className="card-title">EL PROBLEMA</h3>
             <p className="card-description">
               Pasas horas scrolleando en TikTok sin hacer nada productivo. 
@@ -29,7 +29,7 @@ const ProblemSolution = () => {
 
           {/* Solución */}
           <div className="content-card solution-card">
-            <div className="card-icon">🔥</div>
+            <div className="card-icon"></div>
             <h3 className="card-title">LA SOLUCIÓN</h3>
             <p className="card-description">
               Convierte tus metas en retos divertidos con amigos. 
@@ -51,16 +51,11 @@ const ProblemSolution = () => {
             className="meme-image"
           />
           <p className="meme-caption">
-            Es hora de elegir mejor 😉
+            Es hora de elegir mejor 
           </p>
         </div>
 
-        {/* CTA */}
-        <div className="cta-container">
-          <button className="cta-button">
-            ¡Empieza a usar KARMA! →
-          </button>
-        </div>
+        
       </div>
     </section>
   );
