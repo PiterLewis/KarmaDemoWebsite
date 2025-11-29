@@ -17,7 +17,7 @@ export default function CanvaEmbed() {
               <iframe
                 loading="lazy"
                 className="iframe-element"
-                src="https://www.canva.com/design/DAG4HwK5A-g/9uN5kkgxRPbpAH7otx8omA/view?embed"
+                src="https://www.canva.com/design/DAG6GA7Jrro/LQmRlL2NwEoZiPruGzuAfA/view?embed"
                 allow="fullscreen"
                 allowFullScreen
                 title="Canva embed"
