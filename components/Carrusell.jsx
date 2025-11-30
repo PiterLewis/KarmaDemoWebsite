@@ -3,17 +3,19 @@ import PhotoPlaceHolder from "./PhotoPlaceHolder";
 import "./Carrusell.css";
 
 const paths = {
-  1: "./sample3.jpg",
-  2: "./sample4.jpg",
-  3: "./sample1.jpg",
-  4: "./sample2.jpg"
+  1: "./sample1.jpg",
+  2: "./sample2.jpg",
+  3: "./sample3.jpg",
+  4: "./sample4.jpg",
+  5: "./sample5.jpg",
+  6: "./sample6.jpg"
 };
 
 const Carrusell = () => {
   const [pos, setPos] = useState(1);
 
   const toggleNext = () => {
-    if (pos < 4) {
+    if (pos < 6) {
       setPos(pos + 1);
     }
   };
@@ -26,7 +28,7 @@ const Carrusell = () => {
 
   return (
     <div className="carrusell-container">
-      <h3>Proceso ... versión NO oficial</h3>
+      <h3>Hasta ahora </h3>
       <br></br>
       <div className="carrusell-wrapper">
         <PhotoPlaceHolder
@@ -35,8 +37,8 @@ const Carrusell = () => {
           goNext={toggleNext}
           goBefore={toggleBefore}
           currentPos={pos}
-          totalImages={4}
-          canGoNext={pos < 4}
+          totalImages={6}
+          canGoNext={pos < 6}
           canGoBefore={pos > 1}
         />
       </div>
