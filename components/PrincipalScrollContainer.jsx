@@ -7,22 +7,24 @@ import ProblemSolution from './ProblemSolution'
 import HowItWorks from './HowItWorks'
 import Features from './Features'
 import Formulario from './Formulario'
+import VideoPlayer from './VideoPlayer'
 
 const PrincipalScrollContainer = () => {
 
     return (
 
         <>
-            <NavBar/>
-            <Header/>
-            <CanvaEmbed/>
-            <FlashCardManager/>
-            <ProblemSolution/>
-            <HowItWorks/>
-            <Features/>
-            <Carrusell/>
-            <Formulario/>
-            
+            <NavBar />
+            <Header />
+            <VideoPlayer />
+            <CanvaEmbed />
+            <FlashCardManager />
+            <ProblemSolution />
+            <HowItWorks />
+            <Features />
+            <Carrusell />
+            <Formulario />
+
         </>
     )
 
