@@ -21,7 +21,7 @@ const VideoPlayer = () => {
     return (
         <div className="video-player-container">
             <video
-                src="./running.mp4"
+                src="./videoapp.mp4"
                 autoPlay
                 loop
                 controls
