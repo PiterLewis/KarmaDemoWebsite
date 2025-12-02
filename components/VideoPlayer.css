@@ -1,10 +1,17 @@
 .video-player-container {
-  width: 100%;
+  width: 30%;
+  height: auto;
   padding: 4rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background: transparent;
+}
+.video-player-parent {
+  width: 100%;
+  display: flex;
+  justify-content: center;   /* centra horizontal */
+  align-items: center;       /* centra vertical (si hay altura) */
 }
 
 .video-wrapper {

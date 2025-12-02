@@ -19,6 +19,7 @@ import './VideoPlayer.css';
 
 const VideoPlayer = () => {
     return (
+        <div className="video-player-parent">
         <div className="video-player-container">
             <video
                 src="./videoapp.mp4"
@@ -27,6 +28,7 @@ const VideoPlayer = () => {
                 controls
                 style={{ maxWidth: '100%', height: 'auto' }}
             />
+        </div>
         </div>
     );
 };
